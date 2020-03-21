@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Booking</string>
+    <string name="book">Book</string>
+    <string name="car">Аренда машин</string>
+    <string name="comment">Оставить отзыв</string>
+    <string name="booking">Бронировать</string>
+</resources>

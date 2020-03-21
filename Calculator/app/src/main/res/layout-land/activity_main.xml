@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvExpression"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#2C3033"
+        android:gravity="end"
+        android:maxLines="1"
+        android:textColor="#fff"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/tvOut"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#2C3033"
+        android:gravity="end"
+        android:maxLines="1"
+        android:textColor="#fff"
+        android:textSize="40sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvSeven"
+                style="@style/NumberButtonStyle"
+                android:layout_margin="0dp"
+                android:onClick="onClick"
+                android:text="@string/_7" />
+
+            <TextView
+                android:id="@+id/tvEight"
+                style="@style/NumberButtonStyle"
+                android:onClick="onClick"
+                android:text="@string/_8" />
+
+            <TextView
+                android:id="@+id/tvNine"
+                style="@style/NumberButtonStyle"
+                android:onClick="onClick"
+                android:text="@string/_9" />
+
+            <TextView
+                android:id="@+id/tvDiv"
+                style="@style/ActionButtonStyle"
+                android:onClick="pressDiv"
+                android:text="@string/div" />
+
+            <TextView
+                android:id="@+id/tvDelete"
+                style="@style/ActionButtonStyle"
+                android:onClick="delete"
+                android:text="@string/del" />
+
+            <TextView
+                style="@style/ExtraActionButtonStyle"
+                android:layout_margin="0dp"
+                android:text="DEG"
+                android:onClick="radianToD"/>
+
+            <TextView
+                style="@style/ExtraActionButtonStyle"
+                android:layout_margin="0dp"
+                android:text="@string/rad" />
+
+            <TextView
+                android:id="@+id/tvPercent"
+                style="@style/ExtraActionButtonStyle"
+                android:layout_margin="0dp"
+                android:onClick="pressPercent"
+                android:text="@string/percent" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvFour"
+                style="@style/NumberButtonStyle"
+                android:layout_margin="0dp"
+                android:onClick="onClick"
+                android:text="@string/_4" />
+
+            <TextView
+                android:id="@+id/tvFive"
+                style="@style/NumberButtonStyle"
+                android:onClick="onClick"
+                android:text="@string/_5" />
+
+            <TextView
+                android:id="@+id/tvSix"
+                style="@style/NumberButtonStyle"
+                android:onClick="onClick"
+                android:text="@string/_6" />
+
+            <TextView
+                android:id="@+id/tvMultiplication"
+                style="@style/ActionButtonStyle"
+                android:onClick="pressMulti"
+                android:text="@string/multip" />
+
+            <TextView
+                android:id="@+id/tvDeleteAll"
+                style="@style/ActionButtonStyle"
+                android:onClick="clearAll"
+                android:text="@string/c" />
+
+            <TextView
+                style="@style/ExtraActionButtonStyle"
+                android:layout_margin="0dp"
+                android:text="@string/sin"
+                android:onClick="sin"/>
+
+            <TextView
+                style="@style/ExtraActionButtonStyle"
+                android:layout_margin="0dp"
+                android:text="@string/cos"
+                android:onClick="cos"/>
+
+            <TextView
+                style="@style/ExtraActionButtonStyle"
+                android:layout_margin="0dp"
+                android:text="@string/tan"
+                android:onClick="tan"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvOne"
+                style="@style/NumberButtonStyle"
+                android:layout_margin="0dp"
+                android:onClick="onClick"
+                android:text="@string/_1" />
+
+            <TextView
+                android:id="@+id/tvTwo"
+                style="@style/NumberButtonStyle"
+                android:onClick="onClick"
+                android:text="@string/_2" />
+
+            <TextView
+                android:id="@+id/tvThree"
+                style="@style/NumberButtonStyle"
+                android:onClick="onClick"
+                android:text="@string/_3" />
+
+            <TextView
+                android:id="@+id/tvMinus"
+                style="@style/ActionButtonStyle"
+                android:onClick="pressMinus"
+                android:text="@string/minus" />
+
+            <TextView
+                style="@style/ExtraActionButtonStyle"
+                android:onClick="pressFactorial"
+                android:text="@string/q" />
+
+            <TextView
+                style="@style/ExtraActionButtonStyle"
+                android:onClick="pressLogN"
+                android:text="@string/ln" />
+
+            <TextView
+                style="@style/ExtraActionButtonStyle"
+                android:onClick="pressLog"
+                android:text="@string/log" />
+
+            <TextView
+                android:id="@+id/tvSqrt"
+                style="@style/ExtraActionButtonStyle"
+                android:onClick="pressSqrt"
+                android:text="@string/sqrt" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvZero"
+                style="@style/NumberButtonStyle"
+                android:onClick="pressZero"
+                android:text="@string/_0" />
+
+            <TextView
+                android:id="@+id/tvDot"
+                style="@style/NumberButtonStyle"
+                android:layout_margin="0dp"
+                android:onClick="pressDot"
+                android:text="@string/Dot" />
+
+            <TextView
+                android:id="@+id/tvEquals"
+                style="@style/NumberButtonStyle"
+                android:onClick="pressEquals"
+                android:text="@string/equals" />
+
+            <TextView
+                android:id="@+id/tvPlus"
+                style="@style/ActionButtonStyle"
+                android:onClick="pressPlus"
+                android:text="@string/plus" />
+
+            <TextView
+                android:id="@+id/tvPowerX"
+                style="@style/ExtraActionButtonStyle"
+                android:onClick="pressPower"
+                android:text="^x" />
+
+            <TextView
+                style="@style/ExtraActionButtonStyle"
+                android:layout_margin="0dp"
+                android:onClick="pressPi"
+                android:text="@string/pi" />
+
+            <TextView
+                style="@style/ExtraActionButtonStyle"
+                android:text="@string/e"
+                android:onClick="exp"/>
+            <TextView
+                android:id="@+id/tvPower"
+                style="@style/ExtraActionButtonStyle"
+                android:onClick="pressDouble"
+                android:text="^2" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
