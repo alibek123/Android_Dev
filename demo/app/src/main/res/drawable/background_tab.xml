@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:state_checked="true">
+        <layer-list>
+            <item android:drawable="@color/tab_text_checked"/>
+            <item android:drawable="@color/white" android:top="2dp"/>
+        </layer-list>
+    </item>
+    <item android:state_selected="true">
+        <layer-list>
+            <item android:drawable="@color/tab_text_checked"/>
+            <item android:drawable="@color/white" android:top="2dp"/>
+        </layer-list>
+    </item>
+    <item>
+        <layer-list>
+            <item android:drawable="@color/separator_default"/>
+            <item android:drawable="@drawable/background_tab_button_selector" android:top="1dp"/>
+        </layer-list>
+    </item>
+</selector>

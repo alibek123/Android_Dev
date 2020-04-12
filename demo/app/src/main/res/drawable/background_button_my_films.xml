@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:color="@color/button_my_films_solid">
+    <item android:id="@android:id/mask">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/default_corner_radius"/>
+            <solid android:color="@android:color/white"/>
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/default_corner_radius"/>
+            <solid android:color="@color/button_my_films"/>
+            <stroke android:width="1dp" android:color="@color/button_my_films_stroke"/>
+        </shape>
+    </item>
+</ripple>

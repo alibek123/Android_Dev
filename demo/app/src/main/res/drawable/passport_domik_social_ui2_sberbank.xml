@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:height="27dp" android:width="28dp" android:viewportWidth="28" android:viewportHeight="27">
+    <group>
+        <path android:fillColor="?attr/passportNextSocialIconSberbankColor" android:pathData="M27.59 12.5a13.8 13.8 0 1 1-27.55-0.9l8.35 4.75L26.07 6.29a13.4 13.4 0 0 1 1.52 6.22zM8.39 12.9L0.62 8.47a12 12 0 0 0-0.38 1.5L8.4 14.6 25.3 4.98a13.15 13.15 0 0 0-0.9-1.2l-16.02 9.1zM23.36 2.66a14.69 14.69 0 0 0-1.2-1.03L8.38 9.46 1.82 5.72a13.33 13.33 0 0 0-0.68 1.33l7.25 4.12 14.97-8.51zM8.4 7.83L20.76 0.8A13.37 13.37 0 0 0 19.15 0L8.39 6.11l-4.8-2.72a14.5 14.5 0 0 0-0.96 1.16L8.4 7.83z"/>
+    </group>
+</vector>
