@@ -23,7 +23,6 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
         mOnNoteListener=onNoteListener;
     }
     static List<Listitem> listItems;
-    private Context context;
 
 
     @NonNull
@@ -58,7 +57,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
             tvLikes = itemView.findViewById(R.id.likes_number);
             this.onNoteListener=onNoteListener;
             itemView.setOnClickListener(this);
-            context=itemView.getContext();
+            Context context = itemView.getContext();
         }
 
         @Override
